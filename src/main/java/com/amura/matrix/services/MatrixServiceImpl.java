@@ -11,6 +11,5 @@ public class MatrixServiceImpl implements MatrixService {
     public int maxSubmatrix(int[][] arr) {
         MaximumSubmatrix mrs = new MaximumSubmatrix();
         return mrs.maximum(arr);
-
     }
 }

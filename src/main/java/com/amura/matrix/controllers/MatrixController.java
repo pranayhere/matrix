@@ -16,6 +16,7 @@ public class MatrixController {
     @Autowired
     MatrixService matrixService;
     
+    // http://localhost:8080/matrix/max-submatrix?m=6&n=4&arr=1,1,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1
     @GetMapping("/matrix/max-submatrix")
     public Map<String, String> maxSubarray(@RequestParam("m") int m, @RequestParam("n") int n, @RequestParam("arr") String matrixStr) {
         Map<String, String> hm = new HashMap<String, String>();
