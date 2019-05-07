@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import com.amura.matrix.services.MatrixServiceImpl;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -11,7 +12,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class MatrixServiceTests {
 
-    MatrixServiceImpl matrixService  = new MatrixServiceImpl();
+    private MatrixServiceImpl matrixService;
+    
+    @Before
+    public void before() {
+       this.matrixService = new MatrixServiceImpl();
+    }
 
     @Test
     public void brackets() {

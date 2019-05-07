@@ -5,7 +5,6 @@ import com.amura.matrix.models.MaximumSubmatrix;
 import org.springframework.stereotype.Service;
 
 @Service
-
 public class MatrixServiceImpl implements MatrixService {
     
     @Override
