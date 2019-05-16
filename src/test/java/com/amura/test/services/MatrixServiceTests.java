@@ -20,7 +20,7 @@ public class MatrixServiceTests {
     }
 
     @Test
-    public void brackets() {
+    public void whenMatrixIsGiven_thenMaximumSubmatrixIsFound() {
         int[][] arr = {
             {1, 1, 1, 0},
             {1, 1, 1, 1},
@@ -29,7 +29,6 @@ public class MatrixServiceTests {
             {1, 0, 0, 1},
             {1, 1, 1, 1}
         };
-        final int ans = matrixService.maxSubmatrix(arr);
-        assertEquals(8, ans);
+        assertEquals(8, matrixService.maxSubmatrix(arr));
     }
 }
